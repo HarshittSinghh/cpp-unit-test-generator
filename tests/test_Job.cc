@@ -1,7 +1,7 @@
 
 #include <gtest/gtest.h>
-#include "../models/Person.h"
-#include "../models/Job.h"
+#include "./models/Person.h"
+#include "./models/Job.h"
 
 TEST(Person, Constructor) {
     Person person("Alice", 25);
