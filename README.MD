@@ -10,8 +10,15 @@ Core Features
  - Output test files stored in tests/ directory.
 
 ---
-
-
+## Folder Structure
+```
+cpp-test-generator/
+├── prompts/                 
+├── tests/                   
+├── prompt.txt               
+├── models/Job.cc           
+├── index.js            
+└── CMakeLists.txt         
 ---
 
 ## ⚙️ Build Instructions
