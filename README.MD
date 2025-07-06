@@ -13,12 +13,24 @@ Core Features
 ## Folder Structure
 ```
 cpp-test-generator/
-├── prompts/                 
-├── tests/                   
-├── prompt.txt               
-├── models/Job.cc           
-├── index.js            
-└── CMakeLists.txt         
+├── prompts/ 
+│ ├── basic_generation.yaml
+│ ├── refine_tests.yaml 
+│ ├── build_error_fix.yaml 
+│ ├── improve_coverage.yaml 
+│ └── format_and_cleanup.yaml 
+│
+├── tests/ 
+│ └── test_Job.cc 
+│
+├── prompt.txt 
+├── models/ 
+│ └── Job.cc 
+│
+├── index.js
+├── CMakeLists.txt 
+└── README.md      
+```
 ---
 
 ## ⚙️ Build Instructions
