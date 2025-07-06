@@ -4,8 +4,9 @@ project(cpp_test_generator)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-include_directories("../third_party/drogon/")  # <-- UPDATE THIS PATH
-include_directories(${CMAKE_SOURCE_DIR}/../models)
+
+include_directories(${CMAKE_SOURCE_DIR}/models)
+include_directories(${CMAKE_SOURCE_DIR}/<use your path)  # Update this path if needed
 
 
 include(FetchContent)
@@ -17,7 +18,7 @@ FetchContent_MakeAvailable(googletest)
 
 enable_testing()
 
-set(MODELS_DIR ${CMAKE_SOURCE_DIR}/../models)
+set(MODELS_DIR ${CMAKE_SOURCE_DIR}/models)
 set(TESTS_DIR ${CMAKE_SOURCE_DIR}/tests)
 
 add_executable(job_test
@@ -25,11 +26,9 @@ add_executable(job_test
   ${TESTS_DIR}/test_Job.cc
 )
 
-# Link
 target_link_libraries(job_test
   gtest_main
 )
 
-# Register tests
 include(GoogleTest)
 gtest_discover_tests(job_test)
