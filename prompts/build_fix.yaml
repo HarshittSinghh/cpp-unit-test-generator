@@ -1,0 +1,10 @@
+task: Fix build errors
+language: C++
+context:
+  - Input: Unit test file(s)
+  - Error log: [Paste or attach build error log]
+instructions:
+  - Identify reasons for failure
+  - Add or fix include statements
+  - Correct API misuse or syntax
+  - Ensure the output is compilable and runnable with Google Test

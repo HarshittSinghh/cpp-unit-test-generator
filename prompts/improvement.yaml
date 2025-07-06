@@ -1,0 +1,11 @@
+task: Improve unit test coverage
+language: C++
+context:
+  - Existing tests passed
+  - Coverage report provided
+instructions:
+  - Analyze coverage gaps
+  - Generate new test cases for uncovered methods or branches
+  - Avoid duplicating already tested logic
+  - Keep Google Test structure consistent
+  - Ensure new tests are compilable and runnable

@@ -1,0 +1,12 @@
+task: Refine unit tests
+language: C++
+context:
+  - Input: Previously generated Google Test file
+  - Goal: Clean and improve unit tests
+improvements:
+  - Remove duplicate test cases
+  - Add necessary #include headers
+  - Fix naming conventions
+  - Improve coverage with more edge cases
+  - Format tests properly
+  - Ensure compatibility with Google Test framework

@@ -1,0 +1,12 @@
+task: Generate unit tests
+language: C++
+framework: GoogleTest
+output:
+  format: .cpp
+  location: ./tests
+guidelines:
+  - Use TEST() macros
+  - Create one test case per public method
+  - Use descriptive names
+  - Cover edge cases and normal values
+  - Include necessary header files

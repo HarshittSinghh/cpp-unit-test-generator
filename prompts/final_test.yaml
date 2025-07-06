@@ -1,0 +1,11 @@
+task: Final test validation
+language: C++
+checklist:
+  - All public methods tested
+  - No redundant or duplicate tests
+  - Proper use of Google Test framework
+  - All necessary headers included
+  - Code compiles and runs successfully
+  - Coverage report included
+  - All files are well-formatted
+  - Ready for submission
