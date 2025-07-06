@@ -59,6 +59,13 @@ tests/test_Job.cc
 
 ## ⚙️ Build & Run C++ Tests (Google Test + CMake)
 
+### 🔧 Prerequisites
+- Git
+- CMake
+- C++17-compatible compiler
+- Python (for optional script)
+- Node.js (for optional script)
+
 ### 🔨 1. Install Drogon via vcpkg
 
 Make sure you have Git, CMake, and a C++17-compatible compiler installed. Then run:
@@ -72,17 +79,15 @@ cd vcpkg
 
 ./vcpkg install drogon
 
+```
 
 ## 🧪 Unit Testing
 Unit tests are written using Google Test.
 
 ```bash
-
-cd cpp-test-generator
 mkdir build && cd build
 cmake .. -DCMAKE_TOOLCHAIN_FILE=../../vcpkg/scripts/buildsystems/vcpkg.cmake
 cmake --build .
-
 ```
 
 ## Run Test
