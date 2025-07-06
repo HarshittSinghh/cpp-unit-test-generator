@@ -6,7 +6,7 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
 include_directories(${CMAKE_SOURCE_DIR}/models)
-include_directories(${CMAKE_SOURCE_DIR}/<use your path)  # Update this path if needed
+include_directories(${CMAKE_SOURCE_DIR}/<use your path>)  # Update this path if needed
 
 
 include(FetchContent)
