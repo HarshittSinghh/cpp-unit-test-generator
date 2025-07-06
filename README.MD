@@ -1,15 +1,13 @@
-# Org Chart API
+## C++ Unit Test Generator with Ollama & CodeLlama
+This project includes an AI-powered Unit Test Generator that automatically creates and refines unit tests for your C++ application — using Ollama and the CodeLlama:7B model. It integrates prompt engineering and YAML-based instruction refinement for test generation, debugging, and build validation.
 
-A **RESTful API** built with [Drogon](https://github.com/drogonframework/drogon), a high-performance C++ framework. This API is designed to manage organizational structures, including persons, departments, and job roles.
-
-## 🚀 Features
-
-- CRUD operations for organizational entities
-- Efficient routing and ORM via Drogon
-- Structured project organization
-- Unit testing with Google Test
-- JSON-based input/output
-- Easily extendable schema for future components
+Core Features
+ - Reads C++ source files (like Job.cc) and generates unit tests with AI.
+ - Uses YAML-based strict instruction prompts to guide the LLM.
+ - Iteratively refines test cases to remove duplicates and improve structure.
+ - Unit tests generated in Google Test format.
+ - Supports build + test cycle with feedback loops on build failures.
+ - Output test files stored in tests/ directory.
 
 ---
 
