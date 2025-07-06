@@ -1,13 +1,16 @@
-## C++ Unit Test Generator with Ollama & CodeLlama
-This project includes an AI-powered Unit Test Generator that automatically creates and refines unit tests for your C++ application — using Ollama and the CodeLlama:7B model. It integrates prompt engineering and YAML-based instruction refinement for test generation, debugging, and build validation.
+# 🚀 C++ Unit Test Generator with Ollama & CodeLlama
 
-Core Features
- - Reads C++ source files (like Job.cc) and generates unit tests with AI.
- - Uses YAML-based strict instruction prompts to guide the LLM.
- - Iteratively refines test cases to remove duplicates and improve structure.
- - Unit tests generated in Google Test format.
- - Supports build + test cycle with feedback loops on build failures.
- - Output test files stored in tests/ directory.
+A powerful and intelligent **Unit Test Generator** that automatically creates, refines, and improves unit tests for your C++ projects using AI models like **CodeLlama:7B** via **Ollama**. Built with ❤️ for C++ devs, this tool leverages prompt engineering and YAML-driven workflows to provide test coverage and debugging assistance.
+
+## 🔧 Core Features
+
+✅ Generate unit tests from C++ source files (e.g., `Job.cc`)  
+✅ Uses **YAML-based** instructions to guide the AI model  
+✅ Iteratively refines tests: removes duplicates, fixes structure  
+✅ Google Test–compatible output  
+✅ Automatically handles build failures via feedback loops  
+✅ Works via both **Python** and **Node.js** scripts  
+✅ Output saved in the `tests/` directory
 
 ---
 ## Folder Structure
@@ -27,26 +30,50 @@ cpp-test-generator/
 ├── models/ 
 │ └── Job.cc 
 │
-├── index.js
+├── index.js and main.py
 ├── CMakeLists.txt 
 └── README.md      
 ```
 ---
 
-## ⚙️ Build Instructions
+## 🧠 How to Run the Unit Test Generator
 
-### 1. Install Drogon
+### ✅ Prerequisites
+Make sure [Ollama](https://ollama.com) is installed and running with the required model:
+```bash
+ollama pull codellama:7b
+```
+### Generating Unit Test using LLM
+``` bash
+node index.js  # if using JS
+# or
+python main.py # if using python
+```
+### 📂 Output
+Generated unit tests will be saved in:
 
-Follow [Drogon's installation guide](https://github.com/drogonframework/drogon#build-and-install) or install via `vcpkg`:
+```bash
+tests/test_Job.cc
+```
+---
+
+## ⚙️ Build & Run C++ Tests (Google Test + CMake)
+
+### 🔨 1. Install Drogon via vcpkg
+
+Make sure you have Git, CMake, and a C++17-compatible compiler installed. Then run:
 
 ```bash
 git clone https://github.com/microsoft/vcpkg
 cd vcpkg
-./bootstrap-vcpkg.bat
-./vcpkg install drogon
-```
+./bootstrap-vcpkg.bat   # Windows
+# or
+./bootstrap-vcpkg.sh    # Linux/macOS
 
-#🧪 Unit Testing
+./vcpkg install drogon
+
+
+## 🧪 Unit Testing
 Unit tests are written using Google Test.
 
 ```bash
